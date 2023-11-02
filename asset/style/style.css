@@ -23,11 +23,6 @@ img{
 	margin: 0 auto;
 }
 
-.top__container{
-    width: 1600px;
-    margin: 0 auto;
-}
-
 .head__navbar{
     background-color: #222222;
     height: 75px;
@@ -65,6 +60,8 @@ img{
     display: grid;
     grid-template-columns: 1fr 1fr;
     height: 764px;
+    align-items: center;
+    gap: 92px;
 }
 
 .image{
@@ -73,20 +70,7 @@ img{
 
 .side_head_right{
     width: 405px;
-    height: 93px;
-    margin-top: 290px;
-    margin-left: 91.42px;
 }
-
-/* .rectangle{
-    background-color: #F16D7F;
-    width: 12px;
-    height: 92px;
-    margin-right: 146px;
-    display: inline;
-    padding-left: 16px;
-    Это полоска слева, не получилось выровнять
-} */
 
 .text{
     font-family: 'Lato';
@@ -94,7 +78,8 @@ img{
     font-size: 48px;
     line-height: 1;
     color: #222222;
-
+    border-left: 12px solid #F16D7F;
+    padding-left: 16px;
 }
 
 .title{
@@ -195,11 +180,6 @@ img{
 .product_card{
     display: flex;
     flex-direction: column;
-}
-
-.img_card{
-    width: 360px;
-    height: 420px;
 }
 
 .card_text{
