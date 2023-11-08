@@ -51,7 +51,7 @@ img{
     justify-content: space-between;
     width: 159px;
     margin-right: 240px;
-    padding-top: 26px;
+    padding-top: 27px;
     padding-bottom: 20px;
 }
 
@@ -234,4 +234,95 @@ img{
     line-height: 19px;
     color: #F26376;
     background-color: #FFFFFF;
+}
+
+
+/*Семинар 12 */
+
+
+@media (max-width: 1439px) and (min-width: 768px) {
+    .container {
+        width: 736px;
+    }
+
+    .head__navbar{
+        max-width: 100%;
+    }
+
+    .logo {
+        margin-left: 32px;
+    }
+
+    .head_img{
+        margin-right: 32px;
+        width: 160px;
+    }
+
+    .head_title {
+        height: 368px;
+        gap: 0;
+    }
+
+    .image {
+        min-width: 386px;
+    }
+
+    .side_head_right {
+        display: flex;
+        flex-direction: row;
+        margin-left: 39px;
+        margin-top: 138px;
+        margin-bottom: 138px;
+        margin-right: 33px;
+        width: 311px;
+        height: 92px;
+    }
+
+    .text {
+        font-size: 44px;
+        line-height: 0.9;
+    }
+
+    .title {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .top_cards {
+        height: 303px;
+        gap: 20px;
+    }
+
+    .products {
+        margin-top: 110px;
+    }
+
+    .main_title_p {
+        margin-top: 3px;
+    }
+
+    .all_cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 16px;
+        margin-top: 72px;
+    }
+
+    .bottom_button {
+        margin-top: 33px;
+        margin-bottom: 65px;
+    }
+
+    .right_icon{
+        padding-left: 42px;
+    }
+
+    .center_icon{
+        padding-left: 25px;
+    }
+    
+    .left_icon{
+        padding-top: 4px;
+    }
 }
