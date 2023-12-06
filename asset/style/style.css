@@ -20,7 +20,7 @@ img{
 
 .container{
 	width: 1140px;
-	margin-left: 224px;
+	margin: 0 auto;
 }
 
 .head__navbar{
@@ -28,15 +28,14 @@ img{
     height: 75px;
     display: flex;
     justify-content: space-between;
-    width: 1600px;
 }
 
 /* Семинар16(меню) */
-#menu__toggle {
+#menu__toggle{
     opacity: 0;
 }
 
-#menu__toggle:checked ~ .menu__box {
+#menu__toggle:checked ~ .menu__box{
     right: 0 !important;
 }
 
@@ -45,7 +44,7 @@ img{
 }
 .menu__btn > span,
 .menu__btn > span::before,
-.menu__btn > span::after {
+.menu__btn > span::after{
     display: block;
     position: absolute;
     width: 32px;
@@ -54,24 +53,24 @@ img{
     transition-duration: 0.25s;
 }
 
-.menu__btn > span {
+.menu__btn > span{
     margin-top: -5px;
     padding-right: 10px;
 }
-.menu__btn > span::before {
+.menu__btn > span::before{
     content: "";
     top: -10px;
 }
-.menu__btn > span::after {
+.menu__btn > span::after{
     content: "";
     top: 10px;
 }
 .menu__box{
-    display: flex;
-    position: absolute;
+    display: none;
+    position: fixed;
     flex-direction: column;
     top: 75px;
-    right: -200%;
+    right: 0;
     width: 232px;
     height: 634px;
     margin: 0;
@@ -84,7 +83,7 @@ img{
     z-index: 10;
 }
 
-.menu__box h2 {
+.menu__box h2{
     font-family: "Lato";
     font-style: normal;
     font-weight: 700;
@@ -93,7 +92,7 @@ img{
     color: #000000;
 }
 
-.menu__box h3 {
+.menu__box h3{
     font-family: "Lato";
     font-style: normal;
     font-weight: 400;
@@ -102,7 +101,7 @@ img{
     color: #f16d7f;
     padding-top: 20px;
 }
-.menu__item {
+.menu__item{
     display: block;
     padding-left: 20px;
     padding-top: 12px;
@@ -115,8 +114,11 @@ img{
     transition-duration: 0.25s;
 }
 
+.hamburger-menu:hover .menu__box{
+    display: flex;
+}
 
-.logo {
+.logo{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -374,7 +376,6 @@ img{
 /* Семинар16 */
 .footer_info {
     height: 341px;
-    width: 1600px;
     margin: auto;
     background: #222224;
     margin-top: 95px;
@@ -424,7 +425,6 @@ img{
 .footer_blur{
     background: rgba(244, 244, 244, 0.7);
     height: 448px;
-    width: 1600px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -438,6 +438,10 @@ img{
     display: flex;
     align-items: center;
     gap: 223px;
+}
+
+.fonts{
+    height: 448px;
 }
 
 .footer_subscribe_info{
@@ -541,7 +545,6 @@ img{
 
 .footer_navbar {
     height: 79px;
-    width: 1600px;
     margin: 0 auto;
     align-items: center;
     background: #222224;
@@ -677,7 +680,6 @@ img{
     /* Семинар16 */
     .footer_info {
         height: 610px;
-        width: 768px;
         margin-top: 65px;
         display: flex;
         flex-direction: column;
@@ -691,13 +693,11 @@ img{
 
     .footer_subscribe{
         height: 693px;
-        width: 768px;
         margin: 0 auto;
         background-size: cover;
     }
     .footer_blur{
         height: 693px;
-        width: 768px;
     }
 
     .fonts_super{
@@ -709,13 +709,9 @@ img{
     }
 
     .fonts{
-        width: 768px;
         height: 693px;
     }
 
-    .footer_navbar{
-        width: 768px;
-    }
 
     .footer_navbar_p{
         margin-left: 32px;
@@ -824,7 +820,6 @@ img{
 
     /* Семинар16 */
     .footer_info{
-        width: 375px;
         height: 610px;
         gap: 46px;
         display: flex;
@@ -838,12 +833,10 @@ img{
 
     .footer_subscribe{
         height: 550px;
-        width: 375px;
         margin: 0 auto;
     }
     .footer_blur{
         height: 550px;
-        width: 375px;
     }
 
     .fonts_super{
@@ -859,7 +852,6 @@ img{
     }
 
     .footer_navbar{
-        width: 375px;
         height: 143px;
         flex-direction: column-reverse;
     }
@@ -875,7 +867,6 @@ img{
     }
 
     .footer_subscribe_info{
-        width: 343px;
         height: 194px;
         justify-content: space-between;
     }
@@ -886,7 +877,6 @@ img{
     }
     
     .footer_subsc{
-        width: 341px;
         height: 123px;
     }
     
